@@ -65,7 +65,10 @@ export default function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3 md:gap-4">
-                <motion.button 
+                <motion.a 
+                  href="https://www.apple.com/kr/app-store/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center justify-center gap-3 bg-slate-900 text-white px-6 py-3.5 rounded-2xl shadow-lg hover:bg-slate-800 transition-all"
@@ -75,9 +78,12 @@ export default function App() {
                     <div className="text-[9px] opacity-70 leading-none">Download on the</div>
                     <div className="text-sm font-bold leading-tight">App Store</div>
                   </div>
-                </motion.button>
+                </motion.a>
                 
-                <motion.button 
+                <motion.a 
+                  href="https://play.google.com/store/games?hl=ko"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center justify-center gap-3 bg-slate-900 text-white px-6 py-3.5 rounded-2xl shadow-lg hover:bg-slate-800 transition-all"
@@ -87,7 +93,7 @@ export default function App() {
                     <div className="text-[9px] opacity-70 leading-none">GET IT ON</div>
                     <div className="text-sm font-bold leading-tight">Google Play</div>
                   </div>
-                </motion.button>
+                </motion.a>
               </div>
 
               <div className="mt-8 flex flex-col items-center md:items-start gap-3">
@@ -281,21 +287,27 @@ export default function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
-                <motion.button 
+                <motion.a 
+                  href="https://www.apple.com/kr/app-store/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   className="flex items-center justify-center gap-3 bg-white text-violet-600 px-7 py-3.5 rounded-2xl font-bold shadow-lg transition-all"
                 >
                   <Apple size={20} fill="currentColor" />
                   <span className="text-sm md:text-base">App Store</span>
-                </motion.button>
+                </motion.a>
                 
-                <motion.button 
+                <motion.a 
+                  href="https://play.google.com/store/games?hl=ko"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   className="flex items-center justify-center gap-3 bg-white text-violet-600 px-7 py-3.5 rounded-2xl font-bold shadow-lg transition-all"
                 >
                   <Play size={20} fill="currentColor" />
                   <span className="text-sm md:text-base">Google Play</span>
-                </motion.button>
+                </motion.a>
               </div>
             </div>
           </div>
